@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    font-family: "CooperHewittBook";
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    padding: 8px;
+    background-color: rgb(21,105,160);
+    color: white;
+    font-size: 17px;
+}
+
+header {
+    background: rgb(0, 0, 0, 12.5%);
+    padding-left: 7vw;
+    padding-right: 7vw;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav {
+    float: right;
+}
+
+#navbar {
+    margin:1.5vw;
+    margin-top:1vw;
+}
+
+.logocont {
+    float: left;
+    width: 3vw;
+    margin-top: 0.7vw;
+    margin-bottom: 0.4vw;
+}
+
+.headsectioni {
+    font-weight:900;
+    margin: 1vw;
+    font-size: 4vw;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 6vw;
+    padding-top: 2.2vw;
+
+    position: relative;
+}
+
+nav a:hover {
+    color: rgb(21,105,160)
+}
+
+nav a::before {
+    content: '';
+    display: block;
+    height:5px;
+    background-color: rgb(21,105,160);
+
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 300ms;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+#thetopfp {
+    margin-left: 4vw;
+    margin-right: 0;
+}
+
+#frontheader {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.container {
+    margin-left: 4vw;
+    margin-right: 4vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.box1 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.box1,
+.box2,
+.box3 {
+    border: 3px solid rgb(21,105,160);
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.intxtlink {
+    text-decoration: underline;
+    color: rgb(24, 115, 185);
+}
+
+.mainpart {
+    margin-left: 4vw;
+}
+
+#resSubmenu {
+    position: absolute;
+    width:650%;
+    left: -350%;
+    bottom: -260%;
+    background-color: rgb(22, 102, 155);
+    border-radius: 2px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 5px;
+}
+
+#resSubmenu li {
+    text-align:center;
+    margin:10px;
+    padding:4px;
+    margin-bottom: 0px;
+}
+
+#resSubmenu a {
+    color: white;
+}
+
+nav #resSubmenu a:hover::before {
+    width:0%;
+}
+
+#resSubmenu .sublstel {
+    margin-top: -2px;
+    padding-left: 20px;
+    margin-bottom: 6px;
+}
